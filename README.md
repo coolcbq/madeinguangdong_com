@@ -1,13 +1,13 @@
 # Made in Guangdong
 
-Static bilingual website for `madeinguangdong.com`.
+Bilingual website for `madeinguangdong.com`, now running on Next.js while preserving the original static HTML pages as migration sources.
 
 ## Project Status
 
 - Production domain: `https://madeinguangdong.com`
 - Hosting: Vercel
 - Source repository: `https://github.com/coolcbq/madeinguangdong_com`
-- Site type: static HTML/CSS
+- Site type: Next.js App Router with legacy HTML compatibility
 - Primary branch in this checkout: `main`
 - Only push remote: `origin`
 
@@ -39,18 +39,40 @@ Static bilingual website for `madeinguangdong.com`.
 ├── styles.css
 ├── sitemap.xml
 ├── robots.txt
-└── favicon.ico
+├── favicon.ico
+├── package.json
+├── next.config.mjs
+├── scripts/
+│   └── sync-public-assets.mjs
+└── src/
+    ├── app/
+    │   ├── [[...slug]]/page.tsx
+    │   ├── globals.css
+    │   ├── layout.tsx
+    │   └── not-found.tsx
+    └── lib/
+        └── legacy-pages.ts
 ```
 
 ## Local Preview
 
-Open `index.html` directly in a browser, or run a simple local server:
+Install dependencies and run the Next.js development server:
 
 ```bash
-python3 -m http.server 8080
+pnpm install
+pnpm run dev
 ```
 
-Then visit `http://localhost:8080`.
+Then visit `http://localhost:3000`.
+
+## Verification
+
+```bash
+pnpm run lint
+pnpm run build
+```
+
+The first migration phase reads the existing `.html` files and renders them through Next.js routes. This keeps existing URLs such as `/index.html`, `/chanpin-madeinguangdong.html`, and `/cn/index_cn.html` available while the project is gradually componentized.
 
 ## Deployment Notes
 
@@ -60,7 +82,7 @@ The live site currently responds from Vercel. This checkout is managed with `coo
    ```bash
    git status --short --branch
    ```
-2. Verify important pages locally.
+2. Verify important pages locally with `pnpm run dev` or `pnpm run build`.
 3. Check production after deployment:
    ```bash
    curl -I -L https://madeinguangdong.com
