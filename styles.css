@@ -60,6 +60,14 @@ h2 {
     margin-bottom: 10px; /* 下边距 */
 }
 
+/* 三级标题样式 */
+h3 {
+    color: #2f5f78;
+    font-size: 1.15em;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
 /* 段落样式 */
 p {
     color: #666666; /* 深灰色 */
