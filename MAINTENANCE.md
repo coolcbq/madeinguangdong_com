@@ -10,6 +10,7 @@ Date checked: 2026-06-21
 - The site is static HTML/CSS with English pages at the root and Chinese pages under `cn/`.
 - Google Analytics tag `G-657MTWVKL2` is present in pages.
 - `sitemap.xml` and `robots.txt` are present.
+- Contact, Privacy Policy, Editorial Policy, and HTML Sitemap pages are present in English and Chinese.
 
 ## Release Checklist
 

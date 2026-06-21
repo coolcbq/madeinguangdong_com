@@ -16,7 +16,7 @@ a {
 header {
     background: #004d7f; /* 深蓝色背景 */
     color: #ffffff; /* 白色文字 */
-    padding: 20px 0; /* 上下内边距 */
+    padding: 20px; /* 上下内边距 */
     text-align: center; /* 居中对齐 */
 }
 
@@ -29,7 +29,7 @@ h1 {
 /* 语言切换器样式 */
 .language-switcher {
     margin-top: 10px; /* 上边距 */
-    text-align: right; /* 右对齐 */
+    text-align: center; /* 居中对齐 */
 }
 
 .language-switcher label {
@@ -41,6 +41,30 @@ h1 {
     padding: 5px; /* 内边距 */
     border-radius: 5px; /* 圆角 */
     border: 1px solid #ccc; /* 边框 */
+}
+
+/* 主导航 */
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.site-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 0.95em;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+    background: #ffffff;
+    color: #004d7f;
 }
 
 /* 主体内容样式 */
@@ -154,12 +178,32 @@ p {
 /* 页脚样式 */
 footer {
     text-align: center; /* 居中对齐 */
-    padding: 15px 0; /* 上下内边距 */
+    padding: 22px 16px; /* 上下内边距 */
     background: #004d7f; /* 深蓝色背景 */
     color: #ffffff; /* 白色文字 */
     position: relative; /* 相对定位 */
     bottom: 0; /* 底部对齐 */
     width: 100%; /* 宽度100% */
+    box-sizing: border-box;
+}
+
+footer p {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.45);
 }
 
 /* 响应式设计 */
@@ -179,6 +223,10 @@ footer {
     .button {
         padding: 8px 15px; /* 减小按钮的内边距 */
         font-size: 0.9em; /* 减小按钮字体 */
+    }
+
+    .site-nav a {
+        padding: 7px 10px;
     }
 }
 

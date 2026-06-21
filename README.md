@@ -20,12 +20,22 @@ Static bilingual website for `madeinguangdong.com`.
 ├── chanpin-madeinguangdong.html
 ├── lvyouwenhua-madeinguangdong.html
 ├── xinwen-madeinguangdong.html
+├── contact.html
+├── privacy-policy.html
+├── editorial-policy.html
+├── sitemap.html
 ├── cn/
 │   ├── index_cn.html
 │   ├── about_cn.html
 │   ├── chanpin-madeinguangdong_cn.html
 │   ├── lvyouwenhua-madeinguangdong_cn.html
-│   └── xinwen-madeinguangdong_cn.html
+│   ├── xinwen-madeinguangdong_cn.html
+│   ├── contact_cn.html
+│   ├── privacy-policy_cn.html
+│   ├── editorial-policy_cn.html
+│   └── sitemap_cn.html
+├── images/
+│   └── og-made-in-guangdong.svg
 ├── styles.css
 ├── sitemap.xml
 ├── robots.txt
