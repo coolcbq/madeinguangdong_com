@@ -1,6 +1,10 @@
 .next/
+.open-next/
+.wrangler/
 out/
 public/
+dist-cloudflare/
+cloudflare-env.d.ts
 node_modules/
 .env*
 !.env.example

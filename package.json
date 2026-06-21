@@ -7,6 +7,11 @@
     "build": "node scripts/sync-public-assets.mjs && next build",
     "start": "next start",
     "lint": "tsc --noEmit",
+    "build:cf": "node scripts/build-cloudflare-static.mjs",
+    "preview:cf": "pnpm run build:cf && wrangler dev --ip 127.0.0.1 --port 8787",
+    "deploy:cf": "pnpm run build:cf && wrangler deploy",
+    "cf:types": "wrangler types cloudflare-env.d.ts",
+    "cf:check": "pnpm run build:cf && wrangler deploy --dry-run",
     "typecheck": "tsc --noEmit",
     "sync-assets": "node scripts/sync-public-assets.mjs"
   },
@@ -19,6 +24,7 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "wrangler": "^4.103.0"
   }
 }

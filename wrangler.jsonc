@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "madeinguangdong-com",
+  "main": "src/cloudflare-worker.ts",
+  "compatibility_date": "2026-06-21",
+  "assets": {
+    "directory": "dist-cloudflare",
+    "binding": "ASSETS",
+    "html_handling": "none"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

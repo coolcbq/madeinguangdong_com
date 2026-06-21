@@ -74,6 +74,18 @@ pnpm run build
 
 The first migration phase reads the existing `.html` files and renders them through Next.js routes. This keeps existing URLs such as `/index.html`, `/chanpin-madeinguangdong.html`, and `/cn/index_cn.html` available while the project is gradually componentized.
 
+## Cloudflare Preview
+
+Cloudflare deployment uses a static Workers Assets build so the existing `.html` URLs stay unchanged.
+
+```bash
+pnpm run build:cf
+pnpm run cf:check
+pnpm run preview:cf
+```
+
+Only deploy after local preview returns `200 OK` for `/`, `/index.html`, important `.html` pages, `/sitemap.xml`, `/robots.txt`, and static assets.
+
 ## Deployment Notes
 
 The live site currently responds from Vercel. This checkout is managed with `coolcbq/madeinguangdong_com` as the only push repository. Before pushing changes:

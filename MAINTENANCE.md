@@ -26,15 +26,21 @@ Before publishing:
    pnpm run lint
    pnpm run build
    ```
-3. Click through:
+3. Run Cloudflare checks when preparing a Cloudflare deployment:
+   ```bash
+   pnpm run build:cf
+   pnpm run cf:check
+   pnpm run preview:cf
+   ```
+4. Click through:
    - English homepage and four English detail pages
    - Chinese homepage and four Chinese detail pages
    - Language switchers in both directions
-4. Confirm metadata:
+5. Confirm metadata:
    - Each page has one `<title>`
    - Each page has one `<meta name="description">`
    - `sitemap.xml` contains every public page
-5. Check production after deployment:
+6. Check production after deployment:
    ```bash
    curl -I -L https://madeinguangdong.com
    curl -I -L https://www.madeinguangdong.com
