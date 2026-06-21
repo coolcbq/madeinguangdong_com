@@ -45,8 +45,7 @@ Before publishing:
 
 ## Backlog
 
-- Add richer original content to each section; current pages are thin and mostly placeholder-like.
-- Add Open Graph and Twitter card metadata for better sharing previews.
-- Consider canonical URLs and `hreflang` links between English and Chinese versions.
+- Continue expanding original city and industry topic pages beyond the current core page updates.
+- Add more topic-specific images with descriptive alt text.
 - Move repeated language-switcher JavaScript into a shared file if the site grows.
 - Add a custom 404 page.

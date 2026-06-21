@@ -8,6 +8,10 @@ body {
     color: #333; /* 文字颜色 */
 }
 
+a {
+    color: #247a8c;
+}
+
 /* 页眉样式 */
 header {
     background: #004d7f; /* 深蓝色背景 */
@@ -42,6 +46,8 @@ h1 {
 /* 主体内容样式 */
 main {
     padding: 20px; /* 内边距 */
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 /* 每个特色点的样式 */
@@ -66,6 +72,58 @@ h3 {
     font-size: 1.15em;
     margin: 0 0 10px;
     font-weight: 600;
+}
+
+ul {
+    color: #666666;
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.breadcrumb {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin: 0 0 16px;
+    font-size: 0.95em;
+    color: #666666;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+.updated {
+    font-size: 0.95em;
+    color: #777777;
+    margin-top: -6px;
+}
+
+.content-list {
+    margin-top: 10px;
+}
+
+.faq-item {
+    border-top: 1px solid #e6eef2;
+    padding-top: 14px;
+    margin-top: 14px;
+}
+
+.related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.related-links a {
+    border: solid 1px #c9dce3;
+    border-radius: 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    background: #f7fbfc;
 }
 
 /* 段落样式 */

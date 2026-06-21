@@ -3,17 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about Made in Guangdong, our mission, and our commitment to showcasing the unique features of Guangdong.">
+    <meta name="description" content="Learn about Made in Guangdong, a bilingual information website focused on Guangdong products, manufacturing, culture, tourism, local news, and regional identity.">
     <link rel="canonical" href="https://madeinguangdong.com/about.html">
     <link rel="alternate" hreflang="en" href="https://madeinguangdong.com/about.html">
     <link rel="alternate" hreflang="zh-CN" href="https://madeinguangdong.com/cn/about_cn.html">
     <link rel="alternate" hreflang="x-default" href="https://madeinguangdong.com/about.html">
-    <title>About Us - Made in Guangdong</title>
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="About Made in Guangdong">
+    <meta property="og:description" content="Made in Guangdong introduces Guangdong products, manufacturing, culture, tourism, local news, and regional identity.">
+    <meta property="og:url" content="https://madeinguangdong.com/about.html">
+    <meta property="og:image" content="https://madeinguangdong.com/images/og-made-in-guangdong.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Made in Guangdong">
+    <meta name="twitter:description" content="A bilingual information website for Guangdong products, culture, tourism, and local stories.">
+    <meta name="twitter:image" content="https://madeinguangdong.com/images/og-made-in-guangdong.svg">
+    <title>About Made in Guangdong | Mission and Editorial Focus</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://madeinguangdong.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://madeinguangdong.com/about.html"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
-        <h1>About Us</h1>
+        <h1>About Made in Guangdong</h1>
         <div class="language-switcher">
             <label for="language-select">Language:</label>
             <select id="language-select" onchange="changeLanguage()">
@@ -23,17 +52,37 @@
         </div>
     </header>
     <main>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> &gt; About</nav>
+
         <section>
             <h2>Our Mission</h2>
             <h3>Connecting Guangdong with a global audience</h3>
-            <p>At Made in Guangdong, we are dedicated to showcasing the unique features of Guangdong province, including its rich culture, exquisite products, and vibrant tourism. Our goal is to connect local artisans and businesses with a global audience, promoting the beauty and diversity of Guangdong.</p>
+            <p>Made in Guangdong is a bilingual information website focused on Guangdong products, manufacturing cities, culture, tourism, local news, and regional business identity. The site is designed for readers who want a clearer understanding of Guangdong as both a manufacturing powerhouse and a cultural region in South China.</p>
+            <p>Our mission is to organize useful information about Guangdong in a way that is easy to read, search, translate, cite, and expand over time. We connect products with places, tourism with culture, and regional stories with practical context.</p>
+            <p class="updated">Updated: 2026-06-21 | Editorial Team: Made in Guangdong</p>
         </section>
+
         <section>
-            <h2>Our Commitment</h2>
-            <h3>Quality content and sustainable tourism</h3>
-            <p>We are committed to providing high-quality content and resources that highlight the best of Guangdong. Through our platform, we aim to foster appreciation for local craftsmanship and encourage sustainable tourism practices.</p>
+            <h2>Editorial Focus</h2>
+            <h3>Products, culture, tourism and local knowledge</h3>
+            <p>The website focuses on four main areas: Guangdong products, tourism culture, local information, and regional identity. Future content should be factual, clear, and useful for both search engines and readers. Rather than chasing short-lived topics, the site should build stable pages that explain Guangdong's cities, industries, food, culture, travel routes, and local context.</p>
         </section>
-        <a href="index.html" class="button">Back to Home</a>
+
+        <section>
+            <h2>Why Guangdong Matters</h2>
+            <h3>A region where manufacturing and culture meet</h3>
+            <p>Guangdong plays an important role in China manufacturing, international trade, technology supply chains, Cantonese cuisine, Lingnan culture, and modern urban development. Understanding Guangdong means understanding the relationship between factories, ports, wholesale markets, local communities, food traditions, travel culture, and city brands.</p>
+        </section>
+
+        <section>
+            <h2>Related Pages</h2>
+            <div class="related-links">
+                <a href="index.html">Made in Guangdong</a>
+                <a href="chanpin-madeinguangdong.html">Guangdong Products</a>
+                <a href="lvyouwenhua-madeinguangdong.html">Tourism Culture</a>
+                <a href="xinwen-madeinguangdong.html">Local News</a>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2026 Made in Guangdong. All rights reserved.</p>
@@ -44,11 +93,11 @@
             var select = document.getElementById("language-select");
             var language = select.value;
             if (language === "cn") {
-                window.location.href = "cn/about_cn.html"; // 简体中文关于我们页面的URL
+                window.location.href = "cn/about_cn.html";
             }
         }
     </script>
-    
+
     <div style="display:none;">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-657MTWVKL2"></script>
@@ -59,6 +108,5 @@
       gtag('config', 'G-657MTWVKL2');
     </script>
     </div>
-     
 </body>
 </html>

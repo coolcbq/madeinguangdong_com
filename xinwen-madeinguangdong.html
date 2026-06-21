@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>    
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get the latest local news and information about Guangdong.">
+    <meta name="description" content="Read Guangdong local news context, regional updates, community information, cultural events, product trends, and long-term stories about South China.">
     <link rel="canonical" href="https://madeinguangdong.com/xinwen-madeinguangdong.html">
     <link rel="alternate" hreflang="en" href="https://madeinguangdong.com/xinwen-madeinguangdong.html">
     <link rel="alternate" hreflang="zh-CN" href="https://madeinguangdong.com/cn/xinwen-madeinguangdong_cn.html">
     <link rel="alternate" hreflang="x-default" href="https://madeinguangdong.com/xinwen-madeinguangdong.html">
-    <title>Local News - Made in Guangdong</title>
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Guangdong Local News and Regional Information">
+    <meta property="og:description" content="A local information section for Guangdong updates, community stories, cultural events, and product trends.">
+    <meta property="og:url" content="https://madeinguangdong.com/xinwen-madeinguangdong.html">
+    <meta property="og:image" content="https://madeinguangdong.com/images/og-made-in-guangdong.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Guangdong Local News and Regional Information">
+    <meta name="twitter:description" content="Guangdong updates, community stories, cultural events, and product trends.">
+    <meta name="twitter:image" content="https://madeinguangdong.com/images/og-made-in-guangdong.svg">
+    <title>Guangdong Local News and Regional Information</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://madeinguangdong.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Local News",
+          "item": "https://madeinguangdong.com/xinwen-madeinguangdong.html"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
-        <h1>Local News</h1>
+        <h1>Guangdong Local News</h1>
         <div class="language-switcher">
             <label for="language-select">Language:</label>
             <select id="language-select" onchange="changeLanguage()">
@@ -23,17 +52,41 @@
         </div>
     </header>
     <main>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> &gt; Local News</nav>
+
         <section>
-            <h2>Latest News</h2>
-            <h3>Updates from Guangdong</h3>
-            <p>Stay updated with the latest news and developments in Guangdong.</p>
+            <h2>Regional Updates With Long-Term Value</h2>
+            <h3>News context rather than short-lived headlines</h3>
+            <p>The local news section is intended to collect useful context about Guangdong development, community activities, cultural events, product trends, tourism updates, and regional business stories. It should prioritize information that remains useful after the first news cycle, such as city development themes, cultural festivals, industry changes, and local community resources.</p>
+            <p class="updated">Updated: 2026-06-21 | Editorial Team: Made in Guangdong</p>
         </section>
+
         <section>
-            <h2>Community Events</h2>
-            <h3>Activities and community highlights</h3>
-            <p>Learn about upcoming community events and activities.</p>
+            <h2>Coverage Areas</h2>
+            <h3>What this section should include</h3>
+            <ul class="content-list">
+                <li>City and regional development related to Guangdong manufacturing, tourism and culture.</li>
+                <li>Community events, exhibitions, festivals and public cultural activities.</li>
+                <li>Product trends and local industry information that help readers understand Guangdong.</li>
+                <li>Travel-related updates with practical value for visitors and local readers.</li>
+            </ul>
         </section>
-        <a href="index.html" class="button">Back to Home</a>
+
+        <section>
+            <h2>Editorial Note</h2>
+            <h3>Accuracy matters more than speed</h3>
+            <p>This page should not publish unverified rumors or copied headlines. Future articles should include dates, sources, local context, and clear explanations of why the update matters for Guangdong products, culture, tourism, or community life.</p>
+        </section>
+
+        <section>
+            <h2>Related Pages</h2>
+            <div class="related-links">
+                <a href="index.html">Made in Guangdong</a>
+                <a href="chanpin-madeinguangdong.html">Guangdong Products</a>
+                <a href="lvyouwenhua-madeinguangdong.html">Tourism Culture</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2026 Made in Guangdong. All rights reserved.</p>
@@ -44,11 +97,11 @@
             var select = document.getElementById("language-select");
             var language = select.value;
             if (language === "cn") {
-                window.location.href = "cn/xinwen-madeinguangdong_cn.html"; // 简体中文新闻页面的URL
+                window.location.href = "cn/xinwen-madeinguangdong_cn.html";
             }
         }
     </script>
-   
+
     <div style="display:none;">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-657MTWVKL2"></script>
@@ -59,6 +112,5 @@
       gtag('config', 'G-657MTWVKL2');
     </script>
     </div>
-     
 </body>
 </html>

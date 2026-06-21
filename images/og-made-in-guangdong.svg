@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Made in Guangdong</title>
+  <desc id="desc">A social sharing image for Made in Guangdong.</desc>
+  <rect width="1200" height="630" fill="#004d7f"/>
+  <rect x="70" y="70" width="1060" height="490" fill="#ffffff" opacity="0.08"/>
+  <text x="100" y="230" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="700">Made in Guangdong</text>
+  <text x="100" y="320" fill="#d7edf4" font-family="Arial, Helvetica, sans-serif" font-size="34">Products, culture, travel and regional stories</text>
+  <text x="100" y="410" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="28">Guangdong Manufacturing • Cantonese Culture • Local Discovery</text>
+</svg>

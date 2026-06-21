@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="获取最新的地方新闻和信息，了解广东的动态。">
+    <meta name="description" content="阅读广东地方资讯、城市动态、社区信息、文化活动、产品趋势和华南地区长期有参考价值的地方故事。">
     <link rel="canonical" href="https://madeinguangdong.com/cn/xinwen-madeinguangdong_cn.html">
     <link rel="alternate" hreflang="en" href="https://madeinguangdong.com/xinwen-madeinguangdong.html">
     <link rel="alternate" hreflang="zh-CN" href="https://madeinguangdong.com/cn/xinwen-madeinguangdong_cn.html">
     <link rel="alternate" hreflang="x-default" href="https://madeinguangdong.com/xinwen-madeinguangdong.html">
-    <title>地方新闻与信息 - 广东制造</title>
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="广东地方新闻与区域资讯">
+    <meta property="og:description" content="整理广东城市动态、社区故事、文化活动和产品趋势。">
+    <meta property="og:url" content="https://madeinguangdong.com/cn/xinwen-madeinguangdong_cn.html">
+    <meta property="og:image" content="https://madeinguangdong.com/images/og-made-in-guangdong.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="广东地方新闻与区域资讯">
+    <meta name="twitter:description" content="广东城市动态、社区故事、文化活动和产品趋势。">
+    <meta name="twitter:image" content="https://madeinguangdong.com/images/og-made-in-guangdong.svg">
+    <title>广东地方新闻与区域资讯</title>
     <link rel="stylesheet" href="../styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://madeinguangdong.com/cn/index_cn.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "地方新闻与信息",
+          "item": "https://madeinguangdong.com/cn/xinwen-madeinguangdong_cn.html"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
-        <h1>地方新闻与信息</h1>
+        <h1>广东地方新闻与信息</h1>
         <div class="language-switcher">
             <label for="language-select">语言：</label>
             <select id="language-select" onchange="changeLanguage()">
@@ -24,17 +52,41 @@
         </div>
     </header>
     <main>
+        <nav class="breadcrumb" aria-label="面包屑"><a href="index_cn.html">首页</a> &gt; 地方新闻与信息</nav>
+
         <section>
-            <h2>最新新闻</h2>
-            <h3>广东本地动态</h3>
-            <p>获取最新的广东新闻和更新，保持信息灵通。</p>
+            <h2>有长期价值的广东地方资讯</h2>
+            <h3>重视背景说明，而不是追逐短暂热点</h3>
+            <p>地方新闻与信息栏目用于整理广东发展、社区活动、文化事件、产品趋势、旅游更新和区域商业故事。这个栏目更适合发布长期有参考价值的内容，例如城市发展主题、文化节庆、产业变化和地方公共信息。</p>
+            <p class="updated">更新日期：2026-06-21 | 编辑团队：广东制造</p>
         </section>
+
         <section>
-            <h2>社区活动</h2>
-            <h3>活动信息与社区亮点</h3>
-            <p>了解即将举行的社区活动和活动信息。</p>
+            <h2>内容覆盖方向</h2>
+            <h3>这个栏目适合发布什么</h3>
+            <ul class="content-list">
+                <li>与广东制造、旅游和文化相关的城市发展信息。</li>
+                <li>社区活动、展会、节庆和公共文化活动。</li>
+                <li>帮助读者理解广东的产品趋势和产业信息。</li>
+                <li>对游客和本地读者有实际参考价值的旅行相关更新。</li>
+            </ul>
         </section>
-        <a href="index_cn.html" class="button">返回主页</a>
+
+        <section>
+            <h2>编辑说明</h2>
+            <h3>准确比速度更重要</h3>
+            <p>本栏目不应发布未经核实的传闻，也不应简单搬运标题。未来文章应尽量包含日期、来源、地方背景和解释说明，让读者理解这条信息为什么与广东产品、文化、旅游或社区生活有关。</p>
+        </section>
+
+        <section>
+            <h2>相关页面</h2>
+            <div class="related-links">
+                <a href="index_cn.html">广东制造首页</a>
+                <a href="chanpin-madeinguangdong_cn.html">广东特色产品</a>
+                <a href="lvyouwenhua-madeinguangdong_cn.html">广东旅游文化</a>
+                <a href="about_cn.html">关于我们</a>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2026 广东制造。保留所有权利。</p>
@@ -45,7 +97,7 @@
             var select = document.getElementById("language-select");
             var language = select.value;
             if (language === "en") {
-                window.location.href = "../xinwen-madeinguangdong.html"; // 英文新闻页面的URL
+                window.location.href = "../xinwen-madeinguangdong.html";
             }
         }
     </script>
@@ -60,6 +112,5 @@
       gtag('config', 'G-657MTWVKL2');
     </script>
     </div>
-     
 </body>
 </html>

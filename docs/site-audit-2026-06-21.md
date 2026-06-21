@@ -29,5 +29,5 @@ This repository is a small static bilingual website. The production site is serv
 ## Risks / Next Decisions
 
 - Confirm Vercel is connected to `coolcbq/madeinguangdong_com` if production auto-deployment from this repository is expected.
-- Page content is thin, which limits SEO value even if technical metadata is present.
+- Core pages have been expanded, but dedicated city and industry topic pages are still needed for deeper SEO coverage.
 - Analytics script is present on all pages, but traffic and events were not checked from the analytics dashboard.
