@@ -13,20 +13,38 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://madeinguangdong.com/chanpin-madeinguangdong.html</loc>
-        <lastmod>2026-06-21</lastmod>
+        <loc>https://madeinguangdong.com/guangdong-products.html</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://madeinguangdong.com/made-in-guangzhou.html</loc>
+        <lastmod>2026-06-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://madeinguangdong.com/made-in-guangzhou.html</loc>
-        <lastmod>2026-06-21</lastmod>
+        <loc>https://madeinguangdong.com/guangzhou-wholesale-markets.html</loc>
+        <lastmod>2026-06-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://madeinguangdong.com/dongguan-manufacturing.html</loc>
-        <lastmod>2026-06-21</lastmod>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://madeinguangdong.com/shenzhen-electronics.html</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://madeinguangdong.com/foshan-furniture-ceramics.html</loc>
+        <lastmod>2026-06-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -86,7 +104,13 @@
     </url>
     <url>
         <loc>https://madeinguangdong.com/cn/guangdong-specialties_cn.html</loc>
-        <lastmod>2026-06-21</lastmod>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://madeinguangdong.com/cn/lingnan-culture_cn.html</loc>
+        <lastmod>2026-06-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
