@@ -150,6 +150,81 @@ li {
     background: #f7fbfc;
 }
 
+.content-visual {
+    margin: 18px 0 4px;
+}
+
+.content-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #d8e4e8;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.content-visual figcaption {
+    margin-top: 8px;
+    color: #68767c;
+    font-size: 0.92em;
+}
+
+.content-table-wrap {
+    margin: 16px 0;
+    overflow-x: auto;
+    border: 1px solid #d8e4e8;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.content-table {
+    width: 100%;
+    min-width: 680px;
+    border-collapse: collapse;
+    color: #4f5f66;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e6eef2;
+    text-align: left;
+    vertical-align: top;
+}
+
+.content-table th {
+    background: #eef6f8;
+    color: #164f65;
+    font-weight: 700;
+}
+
+.content-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.source-note {
+    font-size: 0.92em;
+    color: #68767c;
+}
+
+.table-scroll-hint {
+    display: none;
+}
+
+.research-steps li {
+    padding-left: 4px;
+    margin-bottom: 12px;
+}
+
+.editorial-note {
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-left: 4px solid #2c89a0;
+    border-radius: 0 6px 6px 0;
+    background: #f2f8fa;
+    color: #4f5f66;
+}
+
 /* 段落样式 */
 p {
     color: #666666; /* 深灰色 */
@@ -227,6 +302,18 @@ footer p {
 
     .site-nav a {
         padding: 7px 10px;
+    }
+
+    .content-table {
+        min-width: 620px;
+        font-size: 0.94em;
+    }
+
+    .table-scroll-hint {
+        display: block;
+        margin: 0 0 -8px;
+        color: #68767c;
+        font-size: 0.9em;
     }
 }
 

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Guangdong manufacturing city clusters</title>
+  <desc id="desc">An original information graphic showing Guangzhou, Shenzhen, Foshan and Dongguan as connected Guangdong product and manufacturing cities.</desc>
+  <rect width="1200" height="675" fill="#f8fbfc"/>
+  <rect x="54" y="44" width="1092" height="587" rx="28" fill="#ffffff" stroke="#cbdde3" stroke-width="3"/>
+  <text x="96" y="105" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#133947">Guangdong City Cluster Map</text>
+  <text x="98" y="146" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#5f7077">Products, trade, manufacturing and supply chain links</text>
+
+  <rect x="96" y="198" width="215" height="140" rx="18" fill="#e9f4f7" stroke="#247a8c" stroke-width="3"/>
+  <text x="124" y="244" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#10495a">Guangzhou</text>
+  <text x="124" y="281" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#42565e">Wholesale trade</text>
+  <text x="124" y="309" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#42565e">Markets and food</text>
+
+  <rect x="359" y="198" width="215" height="140" rx="18" fill="#edf7ef" stroke="#3f8e55" stroke-width="3"/>
+  <text x="387" y="244" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#23623a">Shenzhen</text>
+  <text x="387" y="281" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#42565e">Electronics</text>
+  <text x="387" y="309" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#42565e">Smart hardware</text>
+
+  <rect x="622" y="198" width="215" height="140" rx="18" fill="#fff5e8" stroke="#c87923" stroke-width="3"/>
+  <text x="650" y="244" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#82500d">Foshan</text>
+  <text x="650" y="281" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#42565e">Furniture</text>
+  <text x="650" y="309" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#42565e">Ceramics and home</text>
+
+  <rect x="885" y="198" width="215" height="140" rx="18" fill="#f5eef8" stroke="#8a5aa3" stroke-width="3"/>
+  <text x="913" y="244" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#623377">Dongguan</text>
+  <text x="913" y="281" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#42565e">Export manufacturing</text>
+  <text x="913" y="309" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#42565e">Parts and packaging</text>
+
+  <path d="M311 268H359" stroke="#89a6b0" stroke-width="5" stroke-linecap="round"/>
+  <path d="M574 268H622" stroke="#89a6b0" stroke-width="5" stroke-linecap="round"/>
+  <path d="M837 268H885" stroke="#89a6b0" stroke-width="5" stroke-linecap="round"/>
+
+  <rect x="205" y="424" width="790" height="112" rx="26" fill="#133947"/>
+  <text x="248" y="471" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#ffffff">Pearl River Delta Supply Chain</text>
+  <text x="248" y="511" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#d6e6eb">Design, sourcing, assembly, packaging, logistics and export services</text>
+  <path d="M203 424C210 373 228 346 248 336" stroke="#247a8c" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M996 424C988 373 970 346 950 336" stroke="#8a5aa3" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

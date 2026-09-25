@@ -4,6 +4,11 @@ type Env = {
   };
 };
 
+const REDIRECTS: Record<string, string> = {
+  '/index.html': '/',
+  '/chanpin-madeinguangdong.html': '/guangdong-products.html'
+};
+
 function assetRequest(request: Request, pathname: string) {
   const url = new URL(request.url);
   url.pathname = pathname;
@@ -13,6 +18,12 @@ function assetRequest(request: Request, pathname: string) {
 export default {
   fetch(request: Request, env: Env) {
     const url = new URL(request.url);
+    const redirectPath = REDIRECTS[url.pathname];
+
+    if (redirectPath) {
+      url.pathname = redirectPath;
+      return Response.redirect(url.toString(), 301);
+    }
 
     if (url.pathname === '/') {
       return env.ASSETS.fetch(assetRequest(request, '/index.html'));

@@ -5,7 +5,7 @@ Bilingual website for `madeinguangdong.com`, now running on Next.js while preser
 ## Project Status
 
 - Production domain: `https://madeinguangdong.com`
-- Hosting: Vercel
+- Hosting: Cloudflare Workers Assets
 - Source repository: `https://github.com/coolcbq/madeinguangdong_com`
 - Site type: Next.js App Router with legacy HTML compatibility
 - Primary branch in this checkout: `main`
@@ -35,7 +35,9 @@ Bilingual website for `madeinguangdong.com`, now running on Next.js while preser
 │   ├── editorial-policy_cn.html
 │   └── sitemap_cn.html
 ├── images/
-│   └── og-made-in-guangdong.svg
+│   ├── og-made-in-guangdong.svg
+│   ├── guangdong-industry-clusters.svg
+│   └── guangdong-product-categories.svg
 ├── styles.css
 ├── sitemap.xml
 ├── robots.txt
@@ -72,11 +74,11 @@ pnpm run lint
 pnpm run build
 ```
 
-The first migration phase reads the existing `.html` files and renders them through Next.js routes. This keeps existing URLs such as `/index.html`, `/chanpin-madeinguangdong.html`, and `/cn/index_cn.html` available while the project is gradually componentized.
+The first migration phase reads the existing `.html` files and renders them through Next.js routes. Canonical public URLs should be preferred in navigation and sitemaps. Legacy compatibility redirects send `/index.html` to `/` and `/chanpin-madeinguangdong.html` to `/guangdong-products.html`.
 
 ## Cloudflare Preview
 
-Cloudflare deployment uses a static Workers Assets build so the existing `.html` URLs stay unchanged.
+Cloudflare deployment uses a static Workers Assets build. The Worker keeps `/` mapped to `index.html` while applying SEO redirects for legacy duplicate URLs.
 
 ```bash
 pnpm run build:cf
@@ -84,11 +86,11 @@ pnpm run cf:check
 pnpm run preview:cf
 ```
 
-Only deploy after local preview returns `200 OK` for `/`, `/index.html`, important `.html` pages, `/sitemap.xml`, `/robots.txt`, and static assets.
+Only deploy after local preview returns `200 OK` for `/`, important `.html` pages, `/sitemap.xml`, `/robots.txt`, and static assets, plus `301` for `/index.html` and `/chanpin-madeinguangdong.html`.
 
 ## Deployment Notes
 
-The live site currently responds from Vercel. This checkout is managed with `coolcbq/madeinguangdong_com` as the only push repository. Before pushing changes:
+The live site currently responds from Cloudflare. This checkout is managed with `coolcbq/madeinguangdong_com` as the only push repository. Before pushing changes:
 
 1. Check the worktree:
    ```bash
@@ -97,9 +99,11 @@ The live site currently responds from Vercel. This checkout is managed with `coo
 2. Verify important pages locally with `pnpm run dev` or `pnpm run build`.
 3. Check production after deployment:
    ```bash
-   curl -I -L https://madeinguangdong.com
-   curl -I -L https://www.madeinguangdong.com
-   curl -I -L https://madeinguangdong.com/sitemap.xml
+	   curl -I -L https://madeinguangdong.com
+	   curl -I -L https://www.madeinguangdong.com
+	   curl -I https://madeinguangdong.com/index.html
+	   curl -I https://madeinguangdong.com/chanpin-madeinguangdong.html
+	   curl -I -L https://madeinguangdong.com/sitemap.xml
    ```
 
 ## Maintenance Priorities

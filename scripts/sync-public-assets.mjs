@@ -1,11 +1,10 @@
-import { copyFileSync, existsSync, mkdirSync } from 'node:fs';
+import { copyFileSync, cpSync, existsSync, mkdirSync, rmSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
 const assets = [
   ['favicon.ico', 'public/favicon.ico'],
   ['robots.txt', 'public/robots.txt'],
-  ['sitemap.xml', 'public/sitemap.xml'],
-  ['images/og-made-in-guangdong.svg', 'public/images/og-made-in-guangdong.svg']
+  ['sitemap.xml', 'public/sitemap.xml']
 ];
 
 for (const [source, target] of assets) {
@@ -16,3 +15,10 @@ for (const [source, target] of assets) {
   mkdirSync(dirname(target), { recursive: true });
   copyFileSync(source, target);
 }
+
+if (!existsSync('images')) {
+  throw new Error('Missing asset directory: images');
+}
+
+rmSync(join('public', 'images'), { recursive: true, force: true });
+cpSync('images', join('public', 'images'), { recursive: true });
